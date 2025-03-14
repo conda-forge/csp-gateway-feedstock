@@ -145,8 +145,9 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@arhamchopra](https://github.com/arhamchopra/)
+* [@hintse](https://github.com/hintse/)
+* [@neejweej](https://github.com/neejweej/)
+* [@ptomecek](https://github.com/ptomecek/)
 * [@timkpaine](https://github.com/timkpaine/)
-
-
-<!-- dummy commit to enable rerendering -->
 
