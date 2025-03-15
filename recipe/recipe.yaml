@@ -1,21 +1,21 @@
 context:
   name: csp-gateway
-  version: 0.0.1
+  version: "2.0.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-    url: https://pypi.org/packages/source/c/csp-gateway/csp_gateway-${{ version }}.tar.gz
-    sha256: 6c93db8664841568833811556fa18d190214ee1cf02cc5a71ee10d3a588f964f
+  url: https://pypi.org/packages/source/c/csp-gateway/csp_gateway-${{ version }}.tar.gz
+  sha256: 8577243f11798cf23bb304e8fc13ae9d6d2a86aa617e3fe05a2e63fa32a62f43
 
 build:
   number: 0
   noarch: python
   script: python -m pip install . -vv --no-deps --no-build-isolation
   python:
-    entry_points: 
+    entry_points:
       - cspgateway-start = csp_gateway.server.cli:main
       - cspgateway_start = csp_gateway.server.cli:main
       - csp-gateway-start = csp_gateway.server.cli:main
@@ -65,7 +65,7 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
-    - csp-gateway-start --help
+      - csp-gateway-start --help
 
 about:
   license: Apache-2.0
