@@ -1,6 +1,6 @@
 context:
   name: csp-gateway
-  version: "2.1.1"
+  version: "2.1.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/csp-gateway/csp_gateway-${{ version }}.tar.gz
-  sha256: 44b64c653acce42179d3e4c0182e60b5ee60acbd29a0580bf484664a9b0b6af5
+  sha256: 4f52f546e2ee714c774ea24c28a7fc0904b17ffb4ac1bd71741f2f276426e172
 
 build:
   number: 0
