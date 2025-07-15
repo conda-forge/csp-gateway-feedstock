@@ -81,6 +81,7 @@ outputs:
         - pnpm
       run:
         - python >=${{ python_min }}
+        - csp
         - httpx
     tests:
       - python:
