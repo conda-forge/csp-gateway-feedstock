@@ -82,6 +82,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - csp
+        - deprecation
         - httpx
     tests:
       - python:
