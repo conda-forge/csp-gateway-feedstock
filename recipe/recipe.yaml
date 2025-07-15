@@ -27,6 +27,7 @@ requirements:
     - pip
     - hatchling
     - hatch-jupyter-builder
+    - hatch-multi
     - pnpm
   run:
     - python >=${{ python_min }}
