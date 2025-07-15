@@ -1,6 +1,6 @@
 context:
   name: csp-gateway
-  version: "2.1.5"
+  version: "2.1.6"
 
 recipe:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/c/csp-gateway/csp_gateway-${{ version }}.tar.gz
-  sha256: 1eb24fca30a7bd8fd6503f7aca5d1b545f3c52983b60f989e88bd3c78f262cf9
+  sha256: f02537c7dc71408a993c96fb5f23e8a9f036d717c1a46ea7e03d950b1acd5bfe
  
 build:
   number: 0
@@ -45,11 +45,8 @@ outputs:
         - fsspec
         - hydra-core
         - janus
-        - jsonref
-        - nest-asyncio
         - omegaconf
         - orjson
-        - packaging
         - perspective >=3.3,!=3.4.0,<4
         - psutil
         - pyarrow
@@ -81,9 +78,11 @@ outputs:
         - pnpm
       run:
         - python >=${{ python_min }}
-        - csp
-        - deprecation
         - httpx
+        - jsonref
+        - nest-asyncio
+        - packaging
+        - pydantic >=2
     tests:
       - python:
           imports:
