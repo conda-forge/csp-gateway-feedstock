@@ -30,6 +30,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-csp--gateway-green.svg)](https://anaconda.org/conda-forge/csp-gateway) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/csp-gateway.svg)](https://anaconda.org/conda-forge/csp-gateway) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/csp-gateway.svg)](https://anaconda.org/conda-forge/csp-gateway) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/csp-gateway.svg)](https://anaconda.org/conda-forge/csp-gateway) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-csp--gateway--client-green.svg)](https://anaconda.org/conda-forge/csp-gateway-client) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/csp-gateway-client.svg)](https://anaconda.org/conda-forge/csp-gateway-client) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/csp-gateway-client.svg)](https://anaconda.org/conda-forge/csp-gateway-client) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/csp-gateway-client.svg)](https://anaconda.org/conda-forge/csp-gateway-client) |
 
 Installing csp-gateway
 ======================
@@ -41,16 +42,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `csp-gateway` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `csp-gateway, csp-gateway-client` can be installed with `conda`:
 
 ```
-conda install csp-gateway
+conda install csp-gateway csp-gateway-client
 ```
 
 or with `mamba`:
 
 ```
-mamba install csp-gateway
+mamba install csp-gateway csp-gateway-client
 ```
 
 It is possible to list all of the versions of `csp-gateway` available on your platform with `conda`:
