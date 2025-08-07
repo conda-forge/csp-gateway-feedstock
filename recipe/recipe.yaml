@@ -1,6 +1,6 @@
 context:
   name: csp-gateway
-  version: "2.1.7"
+  version: "2.2.0"
 
 recipe:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/c/csp-gateway/csp_gateway-${{ version }}.tar.gz
-  sha256: 190f044554d90e00a6483ec796e0974fc98cdd41b5a90e6dbdbd933d242dc2e1
+  sha256: 47192885da5f1d44902cae79d0ec657035d14116e5de60fdd4e14adaae5a4c51
 
 build:
   number: 0
