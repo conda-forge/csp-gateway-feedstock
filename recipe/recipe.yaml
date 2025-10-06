@@ -47,11 +47,11 @@ outputs:
         - janus
         - omegaconf
         - orjson
-        - perspective >=3.7,<4
+        - perspective >=3.8,<3.9
         - psutil
         - pyarrow
         - pydantic >=2
-        - uvicorn >=0.28.1,<0.31
+        - uvicorn >=0.28.1,<0.38
         - uvloop
         - websockets
         # Client
