@@ -1,6 +1,6 @@
 context:
   name: csp-gateway
-  version: "2.3.1"
+  version: "2.4.0"
 
 recipe:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/c/csp-gateway/csp_gateway-${{ version }}.tar.gz
-  sha256: 1628e2804e00dd597475cf68a5c1f61d59d723be4897ffa9866abe391696e0cb
+  sha256: 32488b9ecae7ff057e4e6ccb1a7242bffdc028a5b728563d60899e201be72d1f
 
 build:
   number: 0
@@ -47,7 +47,7 @@ outputs:
         - janus
         - omegaconf
         - orjson
-        - perspective >=3.8,<3.9
+        - perspective >=4,<4.1
         - psutil
         - pyarrow
         - pydantic >=2,<2.12
@@ -88,7 +88,7 @@ outputs:
         - jsonref
         - nest-asyncio
         - packaging
-        - pydantic >=2
+        - pydantic >=2,<2.12
     tests:
       - python:
           imports:
