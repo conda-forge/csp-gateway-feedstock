@@ -47,7 +47,7 @@ outputs:
         - janus
         - omegaconf
         - orjson
-        - perspective >=3.8,<3.9
+        - perspective >=4,<4.1
         - psutil
         - pyarrow
         - pydantic >=2,<2.12
@@ -88,7 +88,7 @@ outputs:
         - jsonref
         - nest-asyncio
         - packaging
-        - pydantic >=2
+        - pydantic >=2,<2.12
     tests:
       - python:
           imports:
