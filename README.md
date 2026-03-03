@@ -152,6 +152,3 @@ Feedstock Maintainers
 * [@ptomecek](https://github.com/ptomecek/)
 * [@timkpaine](https://github.com/timkpaine/)
 
-
-<!-- dummy commit to enable rerendering -->
-
