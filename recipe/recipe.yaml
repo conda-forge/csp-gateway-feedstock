@@ -1,14 +1,14 @@
 context:
   name: csp-gateway
-  version: "2.5.0"
+  version: "2.6.0"
 
 recipe:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/6b/56/13f9a32014ace68acee2fd841753a0eb34d726e374bd796371f41f356ee9/csp_gateway-${{ version }}.tar.gz
-  sha256: 9dc5938b25ecb250d9d19aa5f97e9a3ca184e7ecb57c1d79b11d1dba37212924
+  url: https://files.pythonhosted.org/packages/90/8c/e85935d23cdd51887f4fcc97e10d0184d2edc4b231a933b79f20d84d2628/csp_gateway-${{ version }}.tar.gz
+  sha256: 75a3e7fe4f8d8af46ed8e57d4433dc68e2f53d3dc28991e3874b18ccfb36b560
 
 build:
   number: 0
@@ -48,7 +48,7 @@ outputs:
         - janus
         - omegaconf
         - orjson
-        - perspective >=4.2,<4.3
+        - perspective >=4.3,<4.4
         - psutil
         - pyarrow
         - pydantic >=2,<3
