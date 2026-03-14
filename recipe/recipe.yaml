@@ -48,7 +48,7 @@ outputs:
         - janus
         - omegaconf
         - orjson
-        - perspective >=4.2,<4.3
+        - perspective >=4.3,<4.4
         - psutil
         - pyarrow
         - pydantic >=2,<3
