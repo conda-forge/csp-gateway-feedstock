@@ -97,7 +97,9 @@ outputs:
             - csp_gateway
             - csp_gateway.client
           pip_check: false
-          python_version: ${{ python_min }}.*
+          python_version:
+            - "3.11"
+            - "*"
 
 about:
   license: Apache-2.0
