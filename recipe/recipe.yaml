@@ -1,6 +1,6 @@
 context:
   name: csp-gateway
-  version: "2.7.1"
+  version: "2.8.0"
   python_min: "3.11"
 
 recipe:
@@ -8,8 +8,8 @@ recipe:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/19/1e/cff4b6131e061c65852388a40b8e1f7e5a60b63c866607d813929505c433/csp_gateway-${{ version }}.tar.gz
-  sha256: ad8f8fc56776740454c1895bb5046036a02ecc1339221d5c4bd38248f154d28a
+  url: https://files.pythonhosted.org/packages/cd/24/012e4e4a99819dd1a53387f0cce4c1433d3199c1592594bcbb9fa4286ca6/csp_gateway-${{ version }}.tar.gz
+  sha256: 080f9ef1e331ea2a58a8f06336b13f36e40829ad5d60d2881b505cf91076a9cc
 
 build:
   number: 0
