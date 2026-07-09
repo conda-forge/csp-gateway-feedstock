@@ -149,7 +149,6 @@ Feedstock Maintainers
 
 * [@arhamchopra](https://github.com/arhamchopra/)
 * [@hintse](https://github.com/hintse/)
-* [@neejweej](https://github.com/neejweej/)
 * [@ptomecek](https://github.com/ptomecek/)
 * [@timkpaine](https://github.com/timkpaine/)
 
