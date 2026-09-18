@@ -80,9 +80,9 @@ outputs:
             - "*" hydra needs 3.14 support
       - script:
           - csp-gateway-start --help
-          requirements:
-            run:
-              - python <3.14 # hydra needs 3.14 support
+        requirements:
+          run:
+            - python <3.14 # hydra needs 3.14 support
   - package:
       name: ${{ name|lower }}-client
     build:
