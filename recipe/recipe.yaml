@@ -1,7 +1,6 @@
 context:
   name: csp-gateway
   version: "3.0.0"
-  python_min: "3.11"
 
 recipe:
   name: ${{ name|lower }}
