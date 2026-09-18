@@ -77,7 +77,7 @@ outputs:
           pip_check: true
           python_version:
             - ${{ python_min }}.*
-            - "*"
+            # - "*" hydra needs 3.14 support
       - script:
           - csp-gateway-start --help
   - package:
