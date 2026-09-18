@@ -77,9 +77,12 @@ outputs:
           pip_check: true
           python_version:
             - ${{ python_min }}.*
-            # - "*" hydra needs 3.14 support
+            - "*" hydra needs 3.14 support
       - script:
           - csp-gateway-start --help
+          requirements:
+            run:
+              - python <3.14 # hydra needs 3.14 support
   - package:
       name: ${{ name|lower }}-client
     build:
@@ -107,7 +110,7 @@ outputs:
             - csp_gateway.client
           pip_check: false
           python_version:
-            - "3.11"
+            - ${{ python_min }}.*
             - "*"
 
 about:
