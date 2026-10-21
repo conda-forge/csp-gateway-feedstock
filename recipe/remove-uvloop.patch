@@ -1,0 +1,47 @@
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -101,7 +101,6 @@
+     "pyarrow",
+     "pydantic>=2",
+     "uvicorn>=0.28.1,<0.50",
+-    "uvloop",
+     "websockets",
+ ]
+ client = [
+--- a/csp_gateway/server/modules/web/perspective.py
++++ b/csp_gateway/server/modules/web/perspective.py
+@@ -17,7 +17,6 @@
+ import orjson
+ import pyarrow
+ import pyarrow.json
+-import uvloop
+ from csp import ts
+ from fastapi import APIRouter, WebSocket
+ from perspective import Client, Server, Table
+@@ -38,8 +37,6 @@
+ )
+ 
+ T = TypeVar("T")
+-
+-asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+ 
+ log = getLogger(__name__)
+ 
+--- a/PKG-INFO
++++ b/PKG-INFO
+@@ -40,7 +40,6 @@
+ Requires-Dist: pyarrow
+ Requires-Dist: pydantic>=2
+ Requires-Dist: uvicorn<0.50,>=0.28.1
+-Requires-Dist: uvloop
+ Requires-Dist: websockets
+ Provides-Extra: client
+ Requires-Dist: httpx; extra == 'client'
+@@ -107,7 +106,6 @@
+ Requires-Dist: pyarrow; extra == 'server'
+ Requires-Dist: pydantic>=2; extra == 'server'
+ Requires-Dist: uvicorn<0.50,>=0.28.1; extra == 'server'
+-Requires-Dist: uvloop; extra == 'server'
+ Requires-Dist: websockets; extra == 'server'
+ Description-Content-Type: text/markdown
+ 
