@@ -10,9 +10,12 @@ recipe:
 source:
   url: https://files.pythonhosted.org/packages/19/1e/cff4b6131e061c65852388a40b8e1f7e5a60b63c866607d813929505c433/csp_gateway-${{ version }}.tar.gz
   sha256: ad8f8fc56776740454c1895bb5046036a02ecc1339221d5c4bd38248f154d28a
+  patches:
+    # Use standard asyncio and remove uvloop from built package metadata.
+    - remove-uvloop.patch
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -54,7 +57,6 @@ outputs:
         - pyarrow
         - pydantic >=2,<3
         - uvicorn >=0.28.1,<0.41
-        - uvloop
         - websockets
         # Client
         - httpx
@@ -71,7 +73,14 @@ outputs:
           pip_check: true
           python_version: ${{ python_min }}.*
       - script:
+          - python test_default_event_loop.py
           - csp-gateway-start --help
+        files:
+          recipe:
+            - test_default_event_loop.py
+        requirements:
+          run:
+            - python ${{ python_min }}.*
   - package:
       name: ${{ name|lower }}-client
     build:
